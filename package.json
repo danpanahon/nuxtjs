@@ -16,6 +16,7 @@
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.9",
     "axios": "^0.19.2",
+    "clone-deep": "^4.0.1",
     "frontmatter-markdown-loader": "^3.4.3",
     "jquery": "^3.5.1",
     "markdown-it": "^10.0.0",
