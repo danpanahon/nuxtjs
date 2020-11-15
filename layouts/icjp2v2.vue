@@ -1,8 +1,8 @@
 <template>
-  <div :class="{ vjlp6_wrapper: true }">
-    <div class="vjlp6-main">
+  <div :class="{ iclp2v2_wrapper: true }">
+    <div class="iclp2v2-main">
       <!-- PAGE HANDLING DATA -->
-      <Vjlp6Data @emitMDcontent="getMDcontent" />
+      <Iclp2v2Data @emitMDcontent="getMDcontent" />
 
       <div v-for="(data_items, data_index) in md_data" :key="data_index">
         <section id="hero" :style="cssBackground">
@@ -100,7 +100,7 @@
 </template>
 
 <script>
-import Vjlp6Data from "~/pages/marketing/vjlp6/_slug/index.vue";
+import Iclp2v26Data from "~/pages/marketing/iclp2v2/_slug/index.vue";
 import Footer from "~/components/Base/TheFooter.vue";
 
 export default {
@@ -240,7 +240,7 @@ export default {
 <style lang="scss">
 .vjlp6_wrapper {
   @import "@/assets/sass/base/fonts.css";
-  @import "@/assets/sass/vjlp6/style.scss";
+  @import "@/assets/sass/iclp2v2/style.scss";
   @import "@/assets/sass/base/style.scss";
 }
 </style>

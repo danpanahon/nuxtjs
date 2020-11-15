@@ -813,6 +813,112 @@ collections:
               - {label: "Text", name: "text", widget: "string", required: false}
               - {label: "Link", name: "link", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: 'ICLP2V2-NoForm'
+    label: 'InterCasino Template 2 V2'
+    format: 'frontmatter'
+    folder: 'assets/content/landing-page/marketing/iclp2v2'
+    create: true
+    identifier_field: "slug_name"
+    slug: '{{slug}}'
+    preview_path: iclp2v2/{{slug}}
+    show_preview_links: false
+    editor:
+      preview: false
+    fields:
+      - label: Slug
+        widget: string
+        name: slug_name
+        required: true
+        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
+      - label: "Locale"
+        name: "promo_locale"
+        widget: "object"
+        colapsed: true
+        fields:
+          - label: "Country Code"
+            name: "promo_country_code"
+            widget: "select"
+            default: ["jp"]
+            options:
+              - { label: "Japan", value: "jp" }
+              - { label: "Sweden", value: "se" }
+              - { label: "Germany", value: "de" }
+          - label: "Language Code"
+            name: "promo_language_code"
+            widget: "select"
+            default: ["ja"]
+            options:
+              - { label: "Japanese", value: "ja" }
+              - { label: "Swedish", value: "sv" }
+              - { label: "German", value: "de" }
+      - label: "Tag, Optimize and Analytics ID"
+        name: "field_ids"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
+          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
+          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
+      - label: "Promotion Banner"
+        name: "promo_banner"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "promo_title", widget: "string"}
+          - {label: "Banner Statement", name: "promo_banner_statement", widget: "text"}
+          - {label: "Banner Highlighted Phrase", name: "promo_banner_highlighted_phrase", widget: "string", required: false}
+          - {label: "Register Button Text", name: promo_register_button_text, widget: "string"}
+          - {label: "Register Button URL", name: promo_register_button_redirect_url, widget: "string"}
+          - {label: "Home Button Text", name: promo_home_button, widget: "string"}
+          - {label: "Home Button URL", name: promo_home_button_redirect_url, widget: "string"}
+          - {label: "Small Term Text Link", name: promo_smallterm_text_link, widget: "string"}
+          - {label: "Small Term URL", name: promo_smallterm_redirect_url, widget: "string"}
+          - {label: "Small Term Text", name: promo_smallterm_text, widget: "string"}
+          - label: "Images"
+            name: "promo_images"
+            widget: "object"
+            colapsed: true
+            fields:
+              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
+              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
+              - {label: "Banner Image Title 1", name: promo_banner_image_title_1, widget: image}
+              - {label: "Banner Image Title 2", name: promo_banner_image_title_2, widget: image}
+              - {label: "Game Logo", name: promo_game_logo, widget: image, required: false}
+      - label: "Welcome Section"
+        name: "welcome_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "First Statement", name: "welcome_first_statement", widget: "text"}
+          - {label: "First Statement Highlighted Phrase", name: "welcome_first_statement_highlighted_phrase", widget: "string", required: false}
+          - {label: "Second Statement", name: "welcome_second_statement", widget: "text"}
+          - {label: "Rouge's Speech Bubble", name: "welcome_rouge_speech_bubble", widget: "text"}
+          - {label: "Chloe's Speech Bubble", name: "welcome_chloe_speech_bubble", widget: "text"}
+      - label: "Top Game Section"
+        name: "top_game_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Game 1", name: top_game_game1, widget: image}
+          - {label: "Game 2", name: top_game_game2, widget: image}
+          - {label: "Game 3", name: top_game_game3, widget: image}
+          - {label: "Game 4", name: top_game_game4, widget: image}
+          - {label: "Games Info 1", name: top_game_gamesInfo1, widget: image}
+          - {label: "Games Info 2", name: top_game_gamesInfo2, widget: image}
+      - label: "History Section"
+        name: "history_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Rouge's Statement", name: history_rouge_statement, widget: "text"}
+          - {label: "Rouge's Highlighted Phrase", name: history_rouge_highlighted_phrase, widget: "string", required: false}
+          - {label: "Chloe's Statement", name: history_chloe_statement, widget: "text"}
+          - {label: "Chloe's Highlighted Phrase", name: history_chloe_highlighted_phrase, widget: "string", required: false}
+          - {label: "Register Button Text", name: history_register_button_text, widget: "string"}
+          - {label: "Register Button Redirect URL", name: history_register_button_redirect_url, widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
   - label: "Vera&John Homepage"
     name: "VJ-Homepage"
     format: 'frontmatter'
