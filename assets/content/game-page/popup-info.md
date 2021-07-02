@@ -17,4 +17,8 @@ seo:
       hreflang: x-default
     - href: https://www.intercasino.com/ja/slots
       hreflang: ja-jp
+page_section:
+  popup_toggle: true
+  iframe_url: http://www.google.com
+  game_description: Test Description
 ---
