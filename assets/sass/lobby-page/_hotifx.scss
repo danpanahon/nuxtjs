@@ -1,0 +1,138 @@
+// BELOW STYLE ARE NOT YET PART OF BRAND FRAGMENTS. DELETE IF NECCESSARY
+body * {
+  font-display: swap;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.cta_important{
+  background-color: #F7901D;
+  background: linear-gradient(to bottom,#FFC933 0%,#F7901D 100%);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.game-name{
+  font-size: 13px;
+  color: #fff;
+  font-family: "Lucida Grande","Arial";
+  line-height: 19px;
+}
+
+.winning{
+  font-size: 24px;
+}
+
+#footer-login-register{
+  button{
+    font-size: 14px;
+  }
+}
+
+// ================= VJ THEME =============== //
+@at-root .verajohn-theme{
+  .cta_button {
+    border-radius: 10px;
+    display: block;
+    line-height: 28px;
+    text-align: center;
+    box-shadow: inset 0 1px 0 rgba(243, 239, 239, .5), inset 0 -1px 1px rgba(0, 0, 0, .3);
+    border: none;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+@at-root .verajohn-theme{
+  .emphasize {
+    color: #FFEA00;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: "Lucida Grande","Arial";
+  }
+}
+
+@at-root .verajohn-theme{
+  .view-all {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: "Lucida Grande","Arial";
+  }
+}
+
+@at-root .verajohn-theme {
+  .footer-title{
+    font-size: 12px;
+    color: #fff;
+    font-family: "Lucida Grande","Arial";
+  }
+}
+@at-root .verajohn-theme {
+  .footer-text{
+    color: #84d6f8;
+    font-size: 10px;
+  }
+}
+
+
+// ================= IC THEME =============== //
+@at-root .intercasino-theme{
+  .cta_button {
+    border-radius: 32px;
+    display: block;
+    line-height: 28px;
+    text-align: center;
+    box-shadow: inset 0 1px 0 rgba(243, 239, 239, .5), inset 0 -1px 1px rgba(0, 0, 0, .3);
+    border: none;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+@at-root .intercasino-theme{
+  .emphasize {
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Passion One";
+  }
+}
+@at-root .intercasino-theme{
+  .view-all {
+    color: #F20574;
+    font-weight: 500;
+    font-size: 17px;
+    font-family: "Roboto, Lucida Grande, Arial";
+  }
+}
+
+@at-root .intercasino-theme {
+  .footer-title{
+    font-size: 12px;
+    color: #AEAEAE;
+    font-family: "Lucida Grande","Arial";
+  }
+}
+
+@at-root .intercasino-theme {
+  .footer-text{
+    color: #AEAEAE;
+    font-size: 10px;
+  }
+}
+
+@at-root .intercasino-theme {
+  #games .row::-webkit-scrollbar{
+    background-color: #141414;
+  }
+  #games .row::-webkit-scrollbar-thumb{
+    background-color: #141414;
+    border: 1px solid #777777;
+  }
+  #games .row::-webkit-scrollbar-track{
+    background-color: #212121;
+  }
+}

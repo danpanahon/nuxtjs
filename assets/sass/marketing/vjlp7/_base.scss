@@ -1,0 +1,118 @@
+.vjlp7-main{
+  background: $BODY_BG;
+}
+.material-icons {
+  font-family: 'Material Icons';
+}
+h1{
+  font-weight: 300;
+  font-size: $HERO_TITLE_SIZE;
+  color: $HERO_TITLE_COLOR;
+  font-family: 'MainFont-DemiBold', sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 38.4px;
+}
+
+h2{
+  font-size: 19.2px;
+  color: $HERO_TITLE_COLOR;
+  font-weight: 500px;
+  font-family: 'MainFont-DemiBold', sans-serif;
+}
+
+h3{
+  color: $H3_COLOR;
+  font-size: $TEXT_SIZE;
+  font-family: 'MainFont-Bold', sans-serif;
+}
+
+.highlight{
+  color: $HIGHLIGHT;
+}
+
+ul li,
+ol li,
+p {
+  color: $TEXT_COLOR;
+  font-size: $TEXT_SIZE;
+  font-family: 'MainFont-Medium', sans-serif;
+}
+a {
+  text-decoration: none;
+  border-bottom: 2px dashed #FEE63D;
+  color: inherit;
+
+  &:hover{
+    color: #FEE63D;
+  }
+}
+
+ul{
+  padding-left: 20px;
+}
+
+.separator{
+  border-bottom: 3px solid #0093D4;
+}
+
+#login{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: $TEXT_COLOR;
+
+  &:hover{
+    -webkit-animation-name: pulse;
+  	animation-name: pulse;
+    -webkit-animation-iteration-count: infinite;
+  	animation-iteration-count: infinite;
+  }
+
+
+  a{
+    border: none;
+    color: $TEXT_COLOR;
+  }
+
+  i{
+    font-size: 32px;
+    display: block;
+    font-style: normal;
+  }
+
+  span{
+    color: $TEXT_COLOR;
+    font-size: $TEXT_SIZE;
+  }
+}
+
+#hero{
+  small{
+    color: $TEXT_COLOR;
+    font-size: 11px;
+    margin-top: 20px;
+    display: block;
+  }
+}
+
+#steps{
+  .num{
+    background: #fff;
+    color: $STEPS_NUM_COLOR;
+  }
+  p{
+    color: $STEPS_DESC_COLOR;
+    font-size: calc(#{$TEXT_SIZE} - 2px);
+  }
+}
+
+footer{
+  color: $TEXT_COLOR;
+  font-size: $TEXT_SIZE;
+}
+
+#payment{
+  img{
+    width: 100%;
+  }
+}
